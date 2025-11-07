@@ -8,6 +8,8 @@ from scipy.stats import norm
 # Initialisation
 app = dash.Dash(__name__, external_stylesheets=[dbc.themes.MINTY], suppress_callback_exceptions=True)
 app.title = "Pricing d'Options - Modèles Stochastiques"
+server = app.server
+
 
 # ==================== FONCTIONS DE CALCUL ====================
 # (Toutes les fonctions de calcul restent identiques)
@@ -1475,4 +1477,5 @@ h1,h2,h3,h4{font-weight:700;}
 if __name__ == '__main__':
     app.run(debug=False, port=8050)
     
+
     
